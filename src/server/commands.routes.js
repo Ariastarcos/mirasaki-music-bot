@@ -35,7 +35,7 @@ const avoidStringifyBigInt = (inp) => JSON.parse(
 // Utility function to avoid code repetition
 const queryFilterCommands = (arr, category, limit) => {
   return arr
-    .filter((cmd) => cmd.category?.toLowerCase() === category.toLowerCase())
+    .filter((cmd) => typeof cmd.category === 'string' && cmd.category.toLowerCase() === category.toLowerCase())
     .slice(0, limit >= 1 ? limit : arr.length);
 };
 

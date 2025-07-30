@@ -26,6 +26,7 @@ const { NODE_ENV, PORT = 3000 } = process.env;
  * Initialize our express app
  */
 const app = express();
+app.disable('x-powered-by'); // Disable X-Powered-By header
 
 // Routes Middleware
 app.get('/', (req, res) => res.sendStatus(200));
