@@ -24,7 +24,6 @@ module.exports = new ChatInputCommand({
       }
     ]
   },
-  // eslint-disable-next-line sonarjs/cognitive-complexity
   run: async (client, interaction) => {
     const player = useMainPlayer();
     const { emojis } = client.container;

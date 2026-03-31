@@ -61,7 +61,6 @@ const getCommand = (client, activeId) => {
     || selectMenus.get(activeId);
 };
 
-// eslint-disable-next-line sonarjs/cognitive-complexity
 const runCommand = (client, interaction, activeId, cmdRunTimeStart) => {
   const {
     member, guild, channel

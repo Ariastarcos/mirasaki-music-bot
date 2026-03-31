@@ -25,36 +25,23 @@
     "pm2:stop": "pm2 stop mirasaki-music-bot",
     "pm2:purge": "pm2 stop mirasaki-music-bot && pm2 delete mirasaki-music-bot && pm2 reset mirasaki-music-bot",
     "pm2:logs": "pm2 logs --lines 300 mirasaki-music-bot",
-    "pm2:logsError": "pm2 logs --err --lines 300 mirasaki-music-bot",
-    "lint": "eslint src",
-    "linter": "eslint src --fix",
-    "writeLinter": "eslint src --output-file linter-output.txt"
+    "pm2:logsError": "pm2 logs --err --lines 300 mirasaki-music-bot"
   },
   "dependencies": {
-    "@discord-player/extractor": "^4.5.1",
-    "@discordjs/rest": "^2.4.0",
+    "@discord-player/extractor": "^7.2.0",
+    "@discordjs/rest": "^2.6.1",
     "@mirasaki/logger": "file:./vendor/@mirasaki/logger",
+    "@snazzah/davey": "^0.1.11",
     "chalk": "^4.1.2",
     "common-tags": "^1.8.2",
-    "discord-player": "^6.7.1",
-    "discord.js": "^14.16.3",
-    "dotenv": "^16.4.7",
+    "discord-player": "^7.2.0",
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.3.1",
     "lokijs": "^1.5.12",
     "mediaplex": "^1.0.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.1",
-    "@semantic-release/npm": "^12.0.1",
-    "@semantic-release/release-notes-generator": "^14.0.1",
-    "commitizen": "^4.3.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-sonarjs": "^3.0.1",
-    "nodemon": "^3.1.7",
-    "semantic-release": "^24.2.1"
+    "nodemon": "^3.1.14"
   },
   "repository": {
     "type": "git",
@@ -89,11 +76,6 @@
   "homepage": "https://github.com/Mirasaki/mirasaki-music-bot#readme",
   "optionalDependencies": {
     "fsevents": "^2.3.3"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "engineStrict": true,
   "engines": {

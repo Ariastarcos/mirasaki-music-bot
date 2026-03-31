@@ -152,7 +152,6 @@ class CommandBase {
    * @throws {Error} If an issue is encountered while validating the configuration
    * @returns {void} Nothing, if an Error isn't encountered, the command configuration is considered valid
    */
-  // eslint-disable-next-line sonarjs/cognitive-complexity
   validateConfig = () => {
     // Destructure
     const { data, run } = this;

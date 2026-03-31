@@ -31,7 +31,6 @@ module.exports = new ChatInputCommand({
     // Resolve settings
     const settings = getGuildSettings(guild.id);
     if (typeof newSetting === 'undefined' || newSetting === null) {
-      // eslint-disable-next-line sonarjs/no-nested-template-literals
       interaction.reply(`${ emojis.success } ${ member }, \`Use Strict Thread Sessions\` is currently **${ settings.threadSessionStrictCommandChannel ? `${ emojis.success } Enabled` : `${ emojis.error } Disabled` }**`);
       return;
     }
@@ -43,7 +42,6 @@ module.exports = new ChatInputCommand({
       saveDb();
 
       // Feedback
-      // eslint-disable-next-line sonarjs/no-nested-template-literals
       await interaction.reply({ content: `${ emojis.success } ${ member }, \`Use Strict Thread Sessions\` has been **${ newSetting === true ? `${ emojis.success } Enabled` : `${ emojis.error } Disabled` }**` });
     }
     catch (e) {

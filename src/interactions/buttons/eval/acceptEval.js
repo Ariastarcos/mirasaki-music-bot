@@ -66,7 +66,6 @@ module.exports = new ComponentCommand({
     const startEvalTime = process.hrtime.bigint();
 
     try {
-      // eslint-disable-next-line no-eval
       evaluated = eval(codeInput);
       if (evaluated instanceof Promise) evaluated = await evaluated;
 

@@ -174,7 +174,6 @@ const getBotInviteLink = (client) => {
  * @returns {Promise<void>} The promise to await
  */
 // We don't need to access the return value here, EVER, so -
-// eslint-disable-next-line no-promise-executor-return
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
@@ -203,7 +202,6 @@ const getRuntime = (hrtime, decimalPrecision = DEFAULT_DECIMAL_PRECISION) => {
  * @param {number} ms Time in milliseconds
  * @returns
  */
-// eslint-disable-next-line sonarjs/cognitive-complexity
 const msToHumanReadableTime = (ms) => {
   const days = Math.floor(ms / MS_IN_ONE_DAY);
   const hours = Math.floor((ms % MS_IN_ONE_DAY) / MS_IN_ONE_HOUR);

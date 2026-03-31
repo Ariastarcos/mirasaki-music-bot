@@ -2,7 +2,6 @@
 <h1 align="center">Mirasaki Music Bot</h1>
 <div align='center'>
 
-[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 ![build](https://img.shields.io/github/actions/workflow/status/mirasaki/mirasaki-music-bot/test.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/mirasaki/mirasaki-music-bot/badge)](https://www.codefactor.io/repository/github/mirasaki/mirasaki-music-bot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

@@ -154,7 +154,6 @@ const requireSessionConditions = (
   return true;
 };
 
-// eslint-disable-next-line sonarjs/cognitive-complexity
 const requireMusicChannel = (interaction) => {
   const {
     guild, channel, member
@@ -264,7 +263,6 @@ const queueEmbeds = (queue, guild, title) => {
       .setImage(chunk[0]?.thumbnail)
       .setFooter({ text: `Page ${ Math.ceil((i + chunkSize) / chunkSize) } of ${
         Math.ceil(currQueue.length / chunkSize)
-      // eslint-disable-next-line sonarjs/no-nested-template-literals
       } (${ i + 1 }-${ Math.min(i + chunkSize, currQueue.length) } / ${ currQueue.length })${ queue.estimatedDuration ? `\nEstimated Time Remaining: ${ msToHumanReadableTime(queue.estimatedDuration) }` : '' }` });
 
     // Always push to usable embeds
